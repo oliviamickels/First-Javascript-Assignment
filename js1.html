@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First JavaScript Assignment</title>
+    <script>
+        function addem() {
+            // Get the values from the input boxes
+            var x = document.getElementById("num1").value;
+            var y = document.getElementById("num2").value;
+            
+            // Convert strings to integers and add them together
+            var z = parseInt(x) + parseInt(y);
+            
+            // Display the answer on the page
+            document.getElementById("answer").innerHTML = z;
+        }
+</script>
+</head>
+<body>
 
+<p>This is a sample JavaScript and HTML document.</p>
+
+  First number? <input type="text" id="num1"><br><br>
+  Second number? <input type="text" id="num2"><br><br>
+    
+  <input type="button" value="Add Them" onclick="addem()"><br><br>
+
+<p>Your Answer is <span id="answer"></span></p>
+
+</body>
+</html>
